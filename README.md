@@ -27,6 +27,7 @@ Dependencies
 
 ```bash
 ➜  npm i aws-lambda
+➜  npm i @aws-sdk/client-cloudformation
 ➜  npm i -D @types/aws-lambda
 ```
 
@@ -36,3 +37,10 @@ Logs
 ➜  aws logs tail /aws/lambda/CreateTodoLambda --endpoint-url http://127.0.0.1:4566
 ➜  aws logs tail /aws/lambda/GetTodosLambda --endpoint-url http://127.0.0.1:4566
 ```
+
+## Refs
+
+- https://docs.localstack.cloud/overview/
+  - https://docs.localstack.cloud/getting-started/installation/
+  - https://docs.localstack.cloud/user-guide/integrations/aws-cli/#localstack-aws-cli-awslocal
+  - https://docs.localstack.cloud/user-guide/integrations/aws-cdk/
