@@ -21,5 +21,5 @@ export const getApiUrl = async () => {
 
   const outputs = Stacks[0].Outputs;
 
-  console.log(outputs);
+  return outputs?.find((output) => output.OutputKey === "ApiUrl")?.OutputValue;
 };
