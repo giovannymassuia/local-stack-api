@@ -1,13 +1,4 @@
 import { getApiUrl } from './localstack';
-import { DynamoDBClient } from '@aws-sdk/client-dynamodb';
-import { ScanCommand, DeleteCommand, DynamoDBDocumentClient } from '@aws-sdk/lib-dynamodb';
-
-const dynamodbEndpoint = process.env.LOCALSTACK_HOSTNAME;
-
-const client = new DynamoDBClient({
-    endpoint: `http://${dynamodbEndpoint}:4566`
-});
-const docClient = DynamoDBDocumentClient.from(client);
 
 test('get stack outputs', async () => {
     const apiUrl = await getApiUrl();
